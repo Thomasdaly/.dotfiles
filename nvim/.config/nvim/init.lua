@@ -1,3 +1,7 @@
+vim.g.mapleader = " "
+vim.g.maplocalleader = "//"
+
+require("vim-options")
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
 	vim.fn.system({
@@ -11,7 +15,6 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 vim.api.nvim_set_option("clipboard", "unnamed")
-require("vim-options")
 vim.opt.clipboard = "unnamedplus"
 vim.opt.colorcolumn = ""
 require("lazy").setup({

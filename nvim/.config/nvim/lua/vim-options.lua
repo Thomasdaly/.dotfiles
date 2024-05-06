@@ -31,7 +31,6 @@ vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
 -- Set leader key
-vim.g.mapleader = " "
 
 -- Navigate vim panes better
 vim.api.nvim_set_keymap('n', '<c-k>', ':wincmd k<CR>', { noremap = true, silent = true })
