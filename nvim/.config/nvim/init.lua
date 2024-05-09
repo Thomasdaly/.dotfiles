@@ -17,6 +17,7 @@ vim.opt.rtp:prepend(lazypath)
 vim.api.nvim_set_option("clipboard", "unnamed")
 vim.opt.clipboard = "unnamedplus"
 vim.opt.colorcolumn = ""
+vim.opt.conceallevel = 2
 require("lazy").setup({
 	spec = {
 		{ import = "plugins" },
